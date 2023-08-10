@@ -6,7 +6,7 @@
 # Skipped: Hardcoded in the Laravel Framework
 # Skipped: Laravel event auto discovery
 # Skipped: Laravel policy auto discovery
-php8.2 vendor/bin/class-leak check app/ config/ routes/ \
-    --skip-type 'App\Http\Kernel' --skip-type 'App\Exceptions\Handler' \
-    --skip-type 'App\Listeners\*' \
-    --skip-type 'App\Policies\*'
+php8.2 vendor/bin/class-leak check app config routes \
+    --skip-type='App\Http\Kernel' --skip-type='App\Exceptions\Handler' \
+    --skip-type='App\Listeners\*' \
+    --skip-type='App\Policies\*'
