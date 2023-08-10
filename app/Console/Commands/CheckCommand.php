@@ -59,7 +59,7 @@ final class CheckCommand extends Command
         $phpFilePaths = $this->phpFilesFinder->findPhpFiles($paths);
 
         $this->symfonyStyle->progressStart(count($phpFilePaths));
-        $this->symfonyStyle->newLine();
+        // $this->symfonyStyle->newLine();
 
         $usedNames = $this->resolveUsedClassNames($phpFilePaths, function (): void {
             $this->symfonyStyle->progressAdvance();
