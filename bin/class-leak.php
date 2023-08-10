@@ -5,7 +5,7 @@ declare(strict_types=1);
 use TomasVotruba\ClassLeak\Console\ClassLeakApplication;
 use TomasVotruba\ClassLeak\DependencyInjection\ContainerFactory;
 
-require_once dirname(__DIR__) . '/vendor/autoload.php';
+require_once dirname(__DIR__, 4) . '/vendor/autoload.php';
 
 $containerFactory = new ContainerFactory();
 $container = $containerFactory->create();
